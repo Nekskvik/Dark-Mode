@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="cursor"></div>
+
     <div class="wrapper">
         <header>
             <div class="container">
@@ -15,7 +17,7 @@
                     <div class="logo">
                         <span>Tasty</span>
                     </div>
-                    <div class="login">
+                    <div class="login" style="z-index: 100000;">
                         <a href="#" class="btn btn-simple" id="dark-mode-toggle">DARK MODE</a>
                     </div>
                 </div>
@@ -26,14 +28,17 @@
             <div class="container">
                 <div class="hero">
                     <div class="main-title">
-                        <span>We</span>
-                        <span>Organize</span>
-                        <span class="bold">Many</span>
-                        <span class="bold">Exciting</span>
-                        <span>Food</span>
-                        <span>Beverage</span>
-                        <span class="bold">Events</span>
+                        <span class="tw-1">We</span>
+                        <span class="t-1 tw-2">Organize</span>
+                        <span class="bold t-2 tw-3">Many</span>
+                        <span class="bold t-2 tw-4">Exciting</span>
+                        <span class="t-2 tw-5">Food</span>
+                        <span class="tw-6">Beverage</span>
+                        <span class="bold tw-7">Events</span>
                     </div>
+
+                    <div class="throught-text-img"></div>
+
                     <div class="pic-showcase">
                         <div class="secondary-title">
                             <h1>Estetic of food</h1>
@@ -80,11 +85,327 @@
             <div class="container">
                 <div class="footer-content">
                     <div class="copy">Created By <span>Nekskvik</span> in 2021</div>
-                    <div class="info">testing dark mode</div>
                 </div>
             </div>
         </footer>
     </div>
+
+    <nav class="main-nav">
+        <ul class="menu">
+            <li class="list-item"><a class="menu-link closeouter" href="#" data-after="Home">Home</a></li>
+            <li class="list-item"><a class="menu-link" href="#" data-after="Our Work">Our Work</a></li>
+            <li class="list-item"><a class="menu-link" href="#" data-after="Reviews">Reviews</a></li>
+            <li class="list-item"><a class="menu-link" href="#" data-after="Contact Us">Contact Us</a></li>
+            <a href="#" class="close-menu">
+                <svg width="39" height="41" viewBox="0 0 39 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="50" height="5" rx="2.5" transform="matrix(0.695908 -0.718131 0.695908 0.718131 0 36.8599)"/>
+                    <rect width="50" height="5" rx="2.5" transform="matrix(0.695908 0.718131 -0.695908 0.718131 3.47955 1)"/>
+                </svg>               
+            </a>
+        </ul>
+    </nav>
+
+    <div class="outer">
+
+        <section class="close-outer">
+            <div class="times" id="close-outer">
+                <svg width="39" height="41" viewBox="0 0 39 41" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="50" height="5" rx="2.5" transform="matrix(0.695908 -0.718131 0.695908 0.718131 0 36.8599)"/>
+                    <rect width="50" height="5" rx="2.5" transform="matrix(0.695908 0.718131 -0.695908 0.718131 3.47955 1)"/>
+                </svg> 
+            </div>
+        </section>
+
+       <section class="showcase">
+            <div class="inner-width-90">
+                <div class="sub-heading">
+                    <a href="#" class="toggle-menu">MENU</a>
+                </div>
+                <h1 class="outer-main-title">EVENTS NEED 2021 APPROACH</h1>
+                <div class="showcase-content">
+                    <div class="showcase-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Labore eum doloribus iste quia!
+                        </p>
+                    </div>
+                    <div class="vertical-img">
+                        <img src="images/vertical-showcase-img.jpg" alt="">
+                    </div>
+                    <div class="horizontal-img">
+                        <img src="images/horizontal-showcase-img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="motivation"><h2>We want you to remember <br> <strong>every</strong> moment <br> of your life</h2></div>
+            </div>
+        </section>
+
+        <section class="about-events">
+            <div class="inner-text">
+                <div class="text-title aligned-left" id="firstText"><span>every year we organize <strong>over 300</strong></span></div>
+                <div class="text-title aligned-right" id="secondText">events and experiences!</div>
+                <div class="text-title aligned-left" id="thirdText"><span><strong>here are</strong> our favourites.</span></div>
+            </div>
+
+            <div class="last-services">
+                <div class="services">
+                    <div class="service">
+                        <div class="card-img">
+                            <img src="images/our-work-1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3>First Event</h3>
+                            <p>Lorem ipsum dolor sit amet. Nemo rerum distinctio reprehenderit repellat facilis perspiciatis accusantium unde obcaecati. Nam tenetur id aspernatur dolor iste. Dolor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small>Made by: Almera Doe</small>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="card-img">
+                            <img src="images/our-work-5.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3>Second Event</h3>
+                            <p>Lorem ipsum dolor sit amet. Nemo rerum distinctio reprehenderit repellat facilis perspiciatis accusantium unde obcaecati. Nam tenetur id aspernatur dolor iste. Dolor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small>Made by: Kozy Doe</small>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="card-img">
+                            <img src="images/our-work-3.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3>Third Event</h3>
+                            <p>Lorem ipsum dolor sit amet. Nemo rerum distinctio reprehenderit repellat facilis perspiciatis accusantium unde obcaecati. Nam tenetur id aspernatur dolor iste. Dolor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small>Made by: Jane Doe</small>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="card-img">
+                            <img src="images/our-work-4.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3>Fourth Event</h3>
+                            <p>Lorem ipsum dolor sit amet. Nemo rerum distinctio reprehenderit repellat facilis perspiciatis accusantium unde obcaecati. Nam tenetur id aspernatur dolor iste. Dolor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small>Made by: Joe Doe</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-experience">
+            <div class="inner-text-centered">
+                <div class="text-title"><span>feedback</span></div>
+                <div class="text-title"><span><strong>from</strong></span></div>
+                <div class="text-title"><span>customers.</span></div>
+            </div>
+            <div class="grid-customer-testi">
+                <div class="grid-container">
+                    <div class="empty-div"></div>
+                    <div class="has-content btn-featured">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <div class="review-container">
+                                <div class="review-head">
+                                    <div class="author-img"><img src="images/reviewer.jpg" alt=""></div>
+                                    <div class="author-name">
+                                        <h4>Dany Doe</h4>
+                                        <small>Art Director</small>
+                                    </div>
+                                </div>
+                                <div class="review-body"> 
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ratione ut tempore cupiditate eos minus maiores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="has-content btn-featured">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <div class="review-container">
+                                <div class="review-head">
+                                    <div class="author-img"><img src="images/reviewer.jpg" alt=""></div>
+                                    <div class="author-name">
+                                        <h4>Dany Doe</h4>
+                                        <small>Art Director</small>
+                                    </div>
+                                </div>
+                                <div class="review-body"> 
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ratione ut tempore cupiditate eos minus maiores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="empty-div"></div>                 
+                    <div class="empty-div"></div>
+                    <div class="empty-div"></div>
+                    <div class="empty-div"></div>
+                    <div class="has-content btn-featured">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <div class="review-container">
+                                <div class="review-head">
+                                    <div class="author-img"><img src="images/reviewer.jpg" alt=""></div>
+                                    <div class="author-name">
+                                        <h4>Dany Doe</h4>
+                                        <small>Art Director</small>
+                                    </div>
+                                </div>
+                                <div class="review-body"> 
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ratione ut tempore cupiditate eos minus maiores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="empty-div"></div>
+                    <div class="has-content btn-featured">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <div class="review-container">
+                                <div class="review-head">
+                                    <div class="author-img"><img src="images/reviewer.jpg" alt=""></div>
+                                    <div class="author-name">
+                                        <h4>Dany Doe</h4>
+                                        <small>Art Director</small>
+                                    </div>
+                                </div>
+                                <div class="review-body"> 
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ratione ut tempore cupiditate eos minus maiores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="has-content btn-featured">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <div class="review-container">
+                                <div class="review-head">
+                                    <div class="author-img"><img src="images/reviewer.jpg" alt=""></div>
+                                    <div class="author-name">
+                                        <h4>Dany Doe</h4>
+                                        <small>Art Director</small>
+                                    </div>
+                                </div>
+                                <div class="review-body"> 
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ratione ut tempore cupiditate eos minus maiores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="empty-div">c</div>
+                    
+                    <div class="empty-div"></div>
+                    <div class="has-content btn-featured">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <div class="review-container">
+                                <div class="review-head">
+                                    <div class="author-img"><img src="images/reviewer.jpg" alt=""></div>
+                                    <div class="author-name">
+                                        <h4>Dany Doe</h4>
+                                        <small>Art Director</small>
+                                    </div>
+                                </div>
+                                <div class="review-body"> 
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ratione ut tempore cupiditate eos minus maiores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="empty-div"></div>
+                    <div class="empty-div"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="contact-left">
+                <div class="inner-width-90">
+                    <h3>Thanks <br>For Visiting !</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Itaque, non excepturi iusto unde error ducimus quos cumque rerum maiores, ipsa magnam voluptatibus eveniet odio iure!
+                    </p>
+                    <span>Best wishes, <span>TASTY</span>.</span>  
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="inner-width-90">
+                    <h3>Order <br>Event Now</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Itaque, non excepturi iusto unde error ducimus quos cumque rerum maiores, ipsa magnam voluptatibus eveniet odio iure!
+                    </p>
+                    <form class="main-form">
+                        <div class="form-first-group">
+                            <div>
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="email-input">
+                                <label for="email">Your Email</label>
+                                <input type="text" id="email">
+                            </div>
+                        </div>
+                        <div class="form-second-group">
+                            <div>
+                                <label for="textarea">Your Message</label>
+                                <textarea name="main-textarea" id="" cols="30" id="textarea"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-featured">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/hover.js"></script>
 
     <script src="js/script.js"></script>
 </body>
